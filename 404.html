@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<!--
+  GitHub Pages serves this file for any path it has no real file for (a path-routed URL
+  that wasn't prerendered, or a hard refresh on one that was but under a stale build).
+  It re-encodes the requested path into a query string and redirects to the site root,
+  where index.html's inline script decodes it and restores the real path via
+  history.replaceState before the Angular Router reads the URL. Standard GitHub Pages SPA
+  fallback technique (rafgraph/spa-github-pages) — pathSegmentsToKeep is 0 because this
+  site is served at the domain root (https://sumittawal.github.io/), not a subpath.
+-->
+
+<head>
+  <meta charset="utf-8">
+  <title>Chaudhari Associates — Architecture & Interior Design</title>
+  <script>
+    var pathSegmentsToKeep = 0;
+    var l = window.location;
+    l.replace(
+      l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+      l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+      l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+      (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+      l.hash
+    );
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>

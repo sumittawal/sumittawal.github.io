@@ -1,0 +1,19 @@
+{
+  "routes": {
+    "/": {},
+    "/blogposts": {},
+    "/careers": {},
+    "/contact": {},
+    "/project_type/architecture": {},
+    "/project_type/interior": {},
+    "/project_type/landscape": {},
+    "/projects": {},
+    "/projects/chandradev": {},
+    "/projects/cultural-contours-modern-minimalisms": {},
+    "/projects/evolving-fitness-through-industrial-sophistication": {},
+    "/projects/gajlakshmi": {},
+    "/projects/shreenivas": {},
+    "/publications": {},
+    "/publications/free-press-journal-gajlakshmi-2023-11-25": {}
+  }
+}
